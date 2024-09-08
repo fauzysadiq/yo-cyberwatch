@@ -1,5 +1,5 @@
-const apiKey = ''; 
-const modelEndpoint = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=YOUR_API_KEY'; 
+const apiKey = 'AIzaSyAPUMTzblizMJil-5QTai8Aj2n_atuDm0k'; 
+const modelEndpoint = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=${apiKey}`; 
 
 const generationConfig = {
     temperature: 1,
@@ -62,4 +62,4 @@ async function sendMessageAndStreamResponse(chatSession, message) {
     console.log('Complete response:', result); 
 }
 
-// run().catch(error => console.error('Error:', error));
+run().catch(error => console.error('Error:', error));
