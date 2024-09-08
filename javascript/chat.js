@@ -1,4 +1,4 @@
-const apiKey = 'AIzaSyAPUMTzblizMJil-5QTai8Aj2n_atuDm0k'; 
+const apiKey = process.env.GEMINI_API_KEY; 
 const modelEndpoint = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=${apiKey}`; 
 
 const generationConfig = {
